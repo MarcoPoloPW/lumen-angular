@@ -1,0 +1,30 @@
+{
+    "name": "MarcoPoloPW/lumen-angular",
+    "description": "Lumen & Angular package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Polo González",
+            "email": "developer@marcopolo.pw"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "laravel/lumen": "^5.6"
+    },
+     "autoload": {
+        "psr-4": {
+            "MarcoPoloPW\\LaravelAngular\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MarcoPoloPW\\LaravelAngular\\Provider\\LumenServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "illuminate/support": "^5.1"
+    }
+}
